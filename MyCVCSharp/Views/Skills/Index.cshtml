@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Skills";
+}
+
+<h1 class="skills-title">Skills</h1>
+
+<ul class="skills-list">
+    <li>C#, ASP.Net, MVC, and .NET Framework</li>
+    <li>HTML, CSS, React, Bootstrap</li>
+    <li>SQL Server, Git</li>
+</ul>
+
+<style>
+    /* Styling the Heading */
+    .skills-title {
+        font-family: 'Arial', sans-serif;
+        font-size: 32px;
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    /* Styling the Skills List */
+    .skills-list {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color: #34495e;
+        list-style-type: none;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+        /* Styling List Items */
+        .skills-list li {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            /* Hover Effect for List Items */
+            .skills-list li:hover {
+                background-color: #3498db;
+                color: white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+</style>

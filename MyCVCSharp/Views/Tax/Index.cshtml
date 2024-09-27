@@ -1,0 +1,22 @@
+﻿@model MyCVCSharp.Models.TaxModel
+
+@{
+    ViewData["Title"] = "Tax Calculator";
+}
+
+<h1>Tax Calculator</h1>
+
+<form asp-action="CalculateTax" method="post">
+    <div>
+        <label for="annualIncome">Enter your annual income:</label>
+        <input asp-for="AnnualIncome" type="number" step="0.01" required />
+    </div>
+    <button type="submit">Calculate Tax</button>
+</form>
+ 
+@if (Model != null && Model.TaxAmount > 0)
+{
+    <h2>Your Tax Results</h2>
+    <p>Annual Income: @Model.AnnualIncome</p>
+    <p>Calculated Tax Amount: @Model.TaxAmount</p>
+} 
